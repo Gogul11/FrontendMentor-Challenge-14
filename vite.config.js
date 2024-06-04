@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base : "/FrontendMentor-Challenge-14/" ,
+  base : "https://github.com/Gogul11/FrontendMentor-Challenge-14/" ,
 })
