@@ -1,0 +1,117 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.addBar{
+    width: 320px;
+    background-color: hsl(235, 24%, 19%);
+    height: 40px;
+    color: hsl(234, 39%, 85%);
+    padding-left: 20px;
+    border: none;
+}
+.addBarLight{
+    width: 320px;
+    background-color:  hsl(0, 0%, 98%);
+    height: 40px;
+    color: hsl(235, 19%, 35%);
+    padding-left: 20px;
+    border: none;
+}
+::placeholder{
+    color:  hsl(234, 11%, 52%);
+    
+}
+.listName{
+    height: 300px;
+    width: 330px;
+    background-color: hsl(235, 24%, 19%);
+    list-style: none;
+    overflow: auto;
+    font-size: 15px;
+    
+}
+.lightNameLight{
+    height: 300px;
+    width: 330px;
+    background-color:  hsl(0, 0%, 98%);
+    list-style: none;
+    overflow: auto;
+    font-size: 15px;
+    color: hsl(233, 14%, 35%);
+}
+.liItem{
+    height: 50px;
+    border-bottom: 1px solid hsl(234, 11%, 52%);
+}
+
+.strike{
+    text-decoration: line-through;
+    text-decoration-color: hsl(234, 11%, 52%);
+    color: hsl(233, 14%, 35%);
+}
+.strikeLight{
+    text-decoration: line-through;
+    text-decoration-color: hsl(233, 11%, 84%);
+    color: hsl(236, 33%, 92%);
+}
+.content,.strike, .strikeLight{
+    position: relative;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+}
+.cross{
+    float: right;
+    margin: 15px 30px 0px 0px;
+}
+.des, .detail, .desLight, .detailLight{
+    width: 330px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+}
+.des, .detail{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 11%, 52%);
+
+}
+.desLight, .detailLight{
+    background-color:  hsl(0, 0%, 98%);
+    color: hsl(235, 19%, 35%);
+
+}
+.des, .desLight{
+    border-top: 1px solid hsl(234, 11%, 52%);
+}
+.detail, .detailLight{
+    border-radius: 5px;
+}
+.detail span:hover, .detailLight span:hover, .compBtn:hover{
+    color:  rgb(57, 109, 243);
+    cursor: pointer;
+}
+
+@media (min-width: 380px){
+
+
+        .addBar, .addBarLight{
+            width: 380px;
+            height: 50px;
+        }
+        .des, .detail, .desLight, .detailLight{
+            width: 400px;
+            font-size: 15px;
+        }
+        .listName, .lightNameLight{
+            width: 400px;
+            font-size: 18px;
+        }
+    
+}
